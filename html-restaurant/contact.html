@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>HTML Restaurant</title>
+  </head>
+  <body>
+    <header>
+      <h1>Restaurant KEA</h1>
+
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              aria-label="Go to Home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="menu.html"
+              aria-label="Go to Menu"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              aria-label="Go to Contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <address>
+          <p>Guldbergsgade 29N 2200 Copenhagen</p>
+          <p>Phone no.: <a href="tel: 20825370"> 20 82 53 70</a></p>
+          <p>Email: <a href="mailto: inforestaurantkea.dk">info@restaurantkea.dk</a></p>
+        </address>
+        <img
+          src="img/map.jpg"
+          alt="kort der viser kea"
+        />
+
+        <form action="submit">
+          <fieldset>
+            <legend>Contact form</legend>
+
+            <div>
+              <label for="full-name">Full name</label>
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+              />
+            </div>
+            <div>
+              <label for="phone">Phone no.</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+              />
+            </div>
+            <div>
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
+
+            <div>
+              <label for="persons">Persons</label>
+              <input
+                type="number"
+                name="persons"
+                id="persons"
+              />
+            </div>
+            <div>
+              <label for="date">Date and Time</label>
+              <input
+                type="datetime-local"
+                name="date"
+                id="date"
+              />
+            </div>
+            <div>
+              <div><label for="information">Further information</label></div>
+              <textarea
+                name="information"
+                id="information"
+              ></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 KEA Development</p>
+    </footer>
+  </body>
+</html>

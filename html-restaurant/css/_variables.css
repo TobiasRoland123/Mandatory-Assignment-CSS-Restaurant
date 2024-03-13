@@ -1,0 +1,10 @@
+:root {
+  --colorBgHeader: gray;
+  --colorBgFooter: steelblue;
+  --colorPrimary: floralwhite;
+  --colorAccent: steelblue;
+
+  --fontDefault: Verdana, Arial, sans-serif;
+
+  --fontHighlights: 'Times New Roman', serif;
+}

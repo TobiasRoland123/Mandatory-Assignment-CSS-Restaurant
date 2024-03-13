@@ -1,0 +1,58 @@
+@import '_variables.css';
+
+.image_container {
+}
+
+nav ul li:nth-child(1) a {
+  color: brown;
+}
+
+img {
+  width: 100%;
+  order: 1;
+  border-radius: 0.5rem;
+}
+
+.text-with-image {
+  display: flex;
+  flex-flow: column;
+  flex-flow: column-reverse;
+}
+
+section ul {
+  margin-top: 1.5rem;
+  padding: 0 0.5rem;
+  list-style: none;
+  color: var(--colorAccent);
+  display: flex;
+  flex-flow: column;
+  gap: 0.35rem;
+}
+
+article {
+  margin-top: 1.5rem;
+  background-color: var(--colorBgHeader);
+  padding: 0.6rem;
+}
+
+blockquote footer {
+  background-color: var(--colorBgHeader);
+  margin-top: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .text-with-image {
+    flex-flow: row;
+    gap: 2rem;
+  }
+
+  .text-with-image div {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-with-image div:last-child {
+    flex: 0.5;
+  }
+}
