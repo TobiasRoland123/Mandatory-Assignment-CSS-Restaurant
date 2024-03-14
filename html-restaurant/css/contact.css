@@ -1,0 +1,85 @@
+@import '_variables.css';
+
+nav ul li:nth-child(3) a {
+  color: brown;
+}
+img {
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+address {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+address a {
+  font-weight: 600;
+  color: var(--colorAccent);
+}
+
+form {
+  margin-top: 0.5rem;
+}
+
+fieldset {
+  display: flex;
+  flex-flow: column;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+fieldset > div:first-of-type {
+  margin-top: 0.5rem;
+}
+
+fieldset > div {
+  display: flex;
+  flex-flow: column;
+}
+
+#persons {
+  max-width: 20%;
+}
+
+#date {
+  max-width: 40%;
+}
+
+#information {
+  min-height: 5rem;
+}
+
+button {
+  width: fit-content;
+  padding: 0.2rem;
+
+  margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  img {
+    aspect-ratio: 21/9;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    display: flex;
+  }
+
+  img {
+    order: 2;
+    width: 50%;
+    aspect-ratio: auto;
+    height: fit-content;
+  }
+  .info {
+    order: 1;
+    width: 50%;
+  }
+}

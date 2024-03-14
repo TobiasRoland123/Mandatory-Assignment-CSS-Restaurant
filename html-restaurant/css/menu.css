@@ -22,11 +22,13 @@ article {
 img {
   border-radius: 0.35rem;
 }
-article img {
+.image-wrapper {
   order: 1;
+  border-radius: 8px;
 }
 .dish-info {
   order: 2;
+  flex: 1;
 }
 
 article h2 {
@@ -53,19 +55,24 @@ article p {
   article {
     flex-flow: row;
     width: 100%;
+    gap: 0.5rem;
   }
 
   .dish-info {
     order: 1;
   }
-  article img {
-    order: 2;
-    width: 40%;
+  img {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
   section {
     flex-flow: row wrap;
+  }
+  article {
+    max-width: 49%;
   }
 }
