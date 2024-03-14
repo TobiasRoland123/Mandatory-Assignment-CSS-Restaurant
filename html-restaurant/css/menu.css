@@ -8,7 +8,7 @@ section {
 }
 
 nav ul li:nth-child(2) a {
-  color: brown;
+  color: var(--colorActiveSite);
 }
 
 article {
@@ -46,7 +46,7 @@ article p {
   padding: 0.5rem;
   display: flex;
   color: var(--colorPrimary);
-  border: thick solid red;
+  border: thick solid var(--colorRed);
   border-radius: 0.5rem;
   margin-top: 1rem;
 }
